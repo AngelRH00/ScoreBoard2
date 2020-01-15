@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/plusOne"
+            style="@style/PlusButtons"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/teamOne"
+            android:layout_marginStart="138dp"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="54dp"
+            android:layout_toEndOf="@+id/scoreOne"
+            android:layout_toRightOf="@+id/scoreOne"
+            android:background="@drawable/button_background"
+            android:onClick="increaseScore"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/minusOne"
+            style="@style/MinusButtons"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/teamOne"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/button_background"
+            android:onClick="decreaseScore"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/teamOne"
+            style="@style/TeamText"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="140dp"
+            android:paddingTop="50dp"
+            android:text="TEAM 1" />
+
+        <TextView
+            android:id="@+id/scoreOne"
+            style="@style/TeamText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teamOne"
+            android:layout_marginStart="97dp"
+            android:layout_marginLeft="97dp"
+            android:layout_marginTop="74dp"
+            android:layout_toEndOf="@+id/minusOne"
+            android:layout_toRightOf="@+id/minusOne"
+            android:text="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/plusTwo"
+            style="@style/PlusButtons"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/teamTwo"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="61dp"
+            android:layout_toEndOf="@+id/scoreTwo"
+            android:layout_toRightOf="@+id/scoreTwo"
+            android:background="@drawable/button_background"
+            android:onClick="increaseScore"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/minusTwo"
+            style="@style/MinusButtons"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/teamTwo"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/button_background"
+            android:onClick="decreaseScore"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/teamTwo"
+            style="@style/TeamText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="140dp"
+            android:paddingTop="50dp"
+            android:text="TEAM 2" />
+
+        <TextView
+            android:id="@+id/scoreTwo"
+            style="@style/TeamText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teamTwo"
+            android:layout_marginStart="122dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="71dp"
+            android:layout_toEndOf="@+id/minusTwo"
+            android:layout_toRightOf="@+id/minusTwo"
+            android:text="0" />
+    </RelativeLayout>
+</LinearLayout>
